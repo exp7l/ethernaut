@@ -2,7 +2,11 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Script.sol";
-import "../src/3-coinflip.sol";
+
+interface CoinFlip
+{
+    function flip(bool _guess) external;
+}
 
 contract Attacker {
 
