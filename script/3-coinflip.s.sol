@@ -5,7 +5,7 @@ import "forge-std/Script.sol";
 
 interface CoinFlip
 {
-    function flip(bool _guess) external;
+    function flip(bool _guess) external returns (bool);
 }
 
 contract Attacker {
