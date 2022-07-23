@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.0;
 
 import "forge-std/Script.sol";
 
 contract Suicide {
 
-    address payable _force = 0x186e53c3cbA61806b28925E591cD87bbf02e97fc;
+    address payable _force = payable(0x186e53c3cbA61806b28925E591cD87bbf02e97fc);
 
     function suicide()
         public
